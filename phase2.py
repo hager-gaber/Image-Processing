@@ -115,14 +115,15 @@ for r in range(grid_size):
         reconstructed[y1:y2, x1:x2] = pieces[idx]
 
 
-reconstructed_pil = Image.fromarray(reconstructed)
-enhancer = ImageEnhance.Contrast(reconstructed_pil)
-reconstructed_pil = enhancer.enhance(1.5)
-enhancer = ImageEnhance.Sharpness(reconstructed_pil)
-reconstructed_pil = enhancer.enhance(2.0)
+# reconstructed_pil = Image.fromarray(reconstructed)
+# enhancer = ImageEnhance.Contrast(reconstructed_pil)
+# reconstructed_pil = enhancer.enhance(1.5)
+# enhancer = ImageEnhance.Sharpness(reconstructed_pil)
+# reconstructed_pil = enhancer.enhance(2.0)
 
 
 plt.figure(figsize=(8,8))
 plt.imshow(reconstructed)
 plt.axis('off')
 plt.show()
+
